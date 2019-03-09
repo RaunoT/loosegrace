@@ -1,0 +1,48 @@
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
+# Thumbnails
+._*
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
+# Directories potentially created on remote AFP share
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Sass
+.sass-cache/
+
+# CSS sourcemaps
+*.css.map
+
+# JS sourcemaps
+*.js.map
+
+# Node modules
+node_modules/
+
+# Distribution/build folder
+dist/
+
+# Visual Studio Code user settings
+.vscode/

@@ -1,0 +1,41 @@
+// Global
+
+body {
+    background: $dark;
+    color: $white;
+    background: linear-gradient(to bottom, transparent, #111 100vh), url("../img/background.jpg") no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    margin-top: 15vh;
+    font-size: 100px;
+    color: $accent-color;
+    font-family: 'Cedarville Cursive', cursive;
+    /* font-family: 'Alex Brush', cursive; */
+    user-select: none;
+}
+
+h2 {
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+h3 {
+    margin: 50px;
+}
+
+.nav-link {
+    text-transform: uppercase;
+    color: $white;
+}
+
+.nav-link:hover,
+.fab:hover {
+    color: $accent-color;
+}
+
+.fab {
+    margin: 10px 20px 0px 0px;
+    color: $white;
+}
