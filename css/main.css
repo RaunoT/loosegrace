@@ -18,11 +18,12 @@ body {
   background: #111;
   color: #fff;
   background: linear-gradient(to bottom, transparent, #111 100vh), url("../img/background.jpg") no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  background-position: center; }
 
 h1 {
-  margin-top: 15vh;
-  font-size: 100px;
+  margin-top: 25vh;
+  font-size: 5rem;
   color: #EFE8BA;
   font-family: 'Cedarville Cursive', cursive;
   /* font-family: 'Alex Brush', cursive; */
@@ -30,6 +31,10 @@ h1 {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none; }
+  @media (max-width: 992px) {
+    h1 {
+      font-size: 3rem;
+      margin-top: 35vh; } }
 
 h2 {
   margin-top: 150px;
@@ -49,5 +54,8 @@ h3 {
 .fab {
   margin: 10px 20px 0px 0px;
   color: #fff; }
+
+.cover {
+  height: 100vh; }
 
 /*# sourceMappingURL=main.css.map */

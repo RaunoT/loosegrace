@@ -5,15 +5,21 @@ body {
     color: $white;
     background: linear-gradient(to bottom, transparent, #111 100vh), url("../img/background.jpg") no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
 h1 {
-    margin-top: 15vh;
-    font-size: 100px;
+    margin-top: 25vh;
+    font-size: 5rem;
     color: $accent-color;
     font-family: 'Cedarville Cursive', cursive;
     /* font-family: 'Alex Brush', cursive; */
     user-select: none;
+
+    @media (max-width: 992px) {
+        font-size: 3rem;
+        margin-top: 35vh;
+    }
 }
 
 h2 {
@@ -38,4 +44,8 @@ h3 {
 .fab {
     margin: 10px 20px 0px 0px;
     color: $white;
+}
+
+.cover {
+    height: 100vh;
 }
