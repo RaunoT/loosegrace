@@ -22,7 +22,7 @@ body {
   background-position: center; }
 
 h1 {
-  margin-top: 25vh;
+  padding-top: 25vh;
   font-size: 5rem;
   color: #EFE8BA;
   font-family: 'Cedarville Cursive', cursive;
@@ -34,26 +34,22 @@ h1 {
   @media (max-width: 992px) {
     h1 {
       font-size: 3rem;
-      margin-top: 35vh; } }
-
-h2 {
-  margin-top: 150px;
-  margin-bottom: 150px; }
-
-h3 {
-  margin: 50px; }
+      padding-top: 35vh; } }
 
 .nav-link {
   text-transform: uppercase;
   color: #fff; }
-
-.nav-link:hover,
-.fab:hover {
-  color: #EFE8BA; }
+  .nav-link:hover {
+    color: #EFE8BA; }
+  @media (max-width: 992px) {
+    .nav-link {
+      font-size: 0.8rem; } }
 
 .fab {
   margin: 10px 20px 0px 0px;
   color: #fff; }
+  .fab:hover {
+    color: #EFE8BA; }
 
 .cover {
   height: 100vh; }

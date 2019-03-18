@@ -9,7 +9,7 @@ body {
 }
 
 h1 {
-    margin-top: 25vh;
+    padding-top: 25vh;
     font-size: 5rem;
     color: $accent-color;
     font-family: 'Cedarville Cursive', cursive;
@@ -18,32 +18,30 @@ h1 {
 
     @media (max-width: 992px) {
         font-size: 3rem;
-        margin-top: 35vh;
+        padding-top: 35vh;
     }
-}
-
-h2 {
-    margin-top: 150px;
-    margin-bottom: 150px;
-}
-
-h3 {
-    margin: 50px;
 }
 
 .nav-link {
     text-transform: uppercase;
     color: $white;
-}
 
-.nav-link:hover,
-.fab:hover {
-    color: $accent-color;
+    &:hover {
+        color: $accent-color;
+    }
+
+    @media (max-width: 992px) {
+        font-size: 0.8rem;
+    }
 }
 
 .fab {
     margin: 10px 20px 0px 0px;
     color: $white;
+
+    &:hover {
+        color: $accent-color;
+    }
 }
 
 .cover {
