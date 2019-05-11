@@ -20,12 +20,12 @@
   "dependencies": {
     "bootstrap": "^4.3.1",
     "hover.css": "^2.3.2",
-    "jquery": "^3.3.1",
+    "jquery": "^3.4.1",
     "popper.js": "^1.14.7",
     "rellax": "^1.8.0"
   },
   "devDependencies": {
-    "browser-sync": "^2.26.3",
+    "browser-sync": "^2.26.5",
     "del": "^3.0.0",
     "gulp": "^4.0.0",
     "gulp-autoprefixer": "^6.0.0",
