@@ -1,40 +1,30 @@
 {
-  "name": "bootstrap-4-boilerplate",
+  "name": "loose-grace",
   "version": "1.0.0",
-  "description": "Bootstrap 4.1.3 boilerplate with Sass, Browsersync and Gulp.js",
-  "repository": "https://github.com/RaunoT/bootstrap-4-boilerplate",
-  "main": "index.html",
-  "keywords": [
-    "boilerplate",
-    "bootstrap",
-    "sass",
-    "gulp",
-    "browsersync"
-  ],
-  "author": {
-    "name": "Rauno Tegelmann",
-    "email": "raunoot@gmail.com",
-    "url": "https://raunot.ee"
+  "author": "Rauno Tegelmann <raunoot@gmail.com>",
+  "homepage": "https://rauno.eu",
+  "private": true,
+  "scripts": {
+    "serve": "cross-env NODE_ENV=development concurrently \"postcss css/custom.css -o build/custom.css --watch\"  \"live-server .\"",
+    "serve:prod": "cross-env NODE_ENV=production npm run serve",
+    "start": "npm run serve",
+    "build": "postcss css/custom.css -o build/custom.css",
+    "build:prod": "cross-env NODE_ENV=production npm run build",
+    "lint:css": "stylelint css"
   },
-  "license": "MIT",
   "dependencies": {
-    "bootstrap": "^4.3.1",
-    "hover.css": "^2.3.2",
-    "jquery": "^3.4.1",
-    "popper.js": "^1.14.7",
-    "rellax": "^1.8.0"
+    "autoprefixer": "^9.5.1",
+    "tailwindcss": "^1.4"
   },
   "devDependencies": {
-    "browser-sync": "^2.26.5",
-    "del": "^3.0.0",
-    "gulp": "^4.0.0",
-    "gulp-autoprefixer": "^6.0.0",
-    "gulp-clean-css": "^4.0.0",
-    "gulp-concat": "^2.6.1",
-    "gulp-html-replace": "^1.6.2",
-    "gulp-rename": "^1.4.0",
-    "gulp-sass": "^4.0.2",
-    "gulp-sourcemaps": "^2.6.5",
-    "gulp-uglify": "^3.0.1"
+    "concurrently": "^4.1.0",
+    "cross-env": "^5.2.0",
+    "cssnano": "^4.1.10",
+    "live-server": "^1.2.1",
+    "postcss-cli": "^6.1.2",
+    "postcss-import": "^12.0.1",
+    "stylelint": "^10.0.1",
+    "stylelint-cli": "^1.1.0",
+    "stylelint-config-recommended": "^3.0"
   }
 }

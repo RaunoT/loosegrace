@@ -1,25 +1,11 @@
 # Loose Grace
 
-## Setup
+Static HTML website for the band Loose Grace, using [Tailwind.css](https://tailwindcss.com/).
 
-`git clone https://github.com/RaunoT/loosegrace`
+## Quickstart
 
-`cd loosegrace`
+`yarn` - Install dependencies
 
-`npm install`
+`yarn start` - Start development server and live-reloading for changes
 
-## Gulp tasks
-
-* `gulp` - The default task that compiles Sass, concatenates CSS & JS files, creates sourcemaps and moves dependencies to vendor folders
-
-* `gulp vendor` - Moves dependencies to vendor folders
-
-* `gulp dev` - Runs Browsersync in your browser to live reload any changes made
-
-* `gulp dist` - Builds everything and moves it into **dist** folder for production
-
-## Copyright and License
-
-Copyright © 2019 Rauno Tegelmann.
-
-Released under the [MIT](https://github.com/RaunoT/bootstrap-4-boilerplate/blob/master/LICENSE) license.
+`yarn build` - Build assets

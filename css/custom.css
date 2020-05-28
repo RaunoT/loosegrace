@@ -1,0 +1,25 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+body {
+  @apply bg-cover bg-no-repeat bg-center h-screen w-screen relative;
+
+  background-image: url('/images/cover.jpg');
+}
+
+body::after {
+  @apply absolute inset-0 w-full h-full;
+
+  content: "";
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+h1 {
+  padding-top: 30vh;
+}
+
+.w-fit {
+  width: fit-content;
+}
