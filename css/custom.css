@@ -20,6 +20,12 @@ h1 {
   padding-top: 30vh;
 }
 
-.w-fit {
-  width: fit-content;
+@screen md-down {
+  body {
+    background-image: url('/images/cover-mobile.jpg') !important;
+  }
+
+  h1 {
+    padding-top: 20vh;
+  }
 }

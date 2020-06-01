@@ -29,7 +29,14 @@ module.exports = {
         white: '#fff',
       },
       fontSize: {
-        '7xl': '5rem'
+        '7xl': '5rem',
+        '8xl': '7rem'
+      },
+      screens: {
+        'xl-down': {'max': '1279px'},
+        'lg-down': {'max': '1023px'},
+        'md-down': {'max': '767px'},
+        'sm-down': {'max': '639px'}
       }
     },
   },

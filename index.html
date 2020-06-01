@@ -32,47 +32,52 @@
   <meta property="og:url" content="https://loosegrace.com">
   <meta property="og:description" content="Good ol' rock music in the makin'">
   <meta property="og:image" content="https://loosegrace.com/images/cover.jpg">
-  <!-- Fonts -->
+  <!-- Fonts & icons -->
   <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Open+Sans&display=swap" rel="stylesheet">
-  <!-- Icons -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
 <body>
 
   <!-- Heading -->
-  <h1 class="text-center text-yellow font-display text-5xl sm:text-7xl mb-4">Loose Grace</h1>
+  <h1 class="text-center text-yellow font-display text-5xl sm:text-7xl md:text-8xl mb-4">Loose Grace</h1>
 
   <!-- Music -->
-  <h2 class="text-center mb-4 text-sm">Listen now</h2>
-  <div class="flex justify-center mb-4">
-    <a class="flex items-center justify-center w-12 h-12 bg-black rounded-full mr-4 text-green-500" target="_blank"
+  <h2 class="sr-only">Listen now</h2>
+  <div class="flex md-down:flex-col items-center md:justify-center mb-4">
+    <a class="flex items-center justify-center text-lg md-down:mb-4 md:mr-8 transition duration-200 hover:text-green-500" target="_blank"
       href="https://open.spotify.com/artist/1wdr3f1IZPyMm4Bu0PcxNd?si=WLWC2AnDRtW4l54wOqrlzw">
-      <i class="fab fa-spotify"></i>
+      <i class="fab fa-spotify mr-2"></i>
+      <h3>Spotify</h3>
     </a>
-    <a class="flex items-center justify-center w-12 h-12 bg-black rounded-full mr-4" target="_blank"
+    <a class="flex items-center justify-center text-lg md-down:mb-4 md:mr-8 transition duration-200 hover:text-gray-400" target="_blank"
       href="https://music.apple.com/us/artist/loose-grace/1515129835">
-      <i class="fab fa-apple"></i>
+      <i class="fab fa-apple mr-2"></i>
+      <h3>Music</h3>
     </a>
-    <a class="flex items-center justify-center w-12 h-12 bg-black rounded-full mr-4 text-red-700" target="_blank"
+    <a class="flex items-center justify-center text-lg md-down:mb-4 md:mr-8 transition duration-200 hover:text-red-700" target="_blank"
       href="https://www.youtube.com/channel/UCn1aq-hWYnjIjvoNXVBrWQw">
-      <i class="fab fa-youtube"></i>
+      <i class="fab fa-youtube mr-2"></i>
+      <h3>YouTube</h3>
     </a>
-    <a class="flex items-center justify-center w-12 h-12 bg-black rounded-full text-orange-600" target="_blank"
+    <a class="flex items-center justify-center text-lg transition duration-200 hover:text-orange-600" target="_blank"
       href="https://soundcloud.com/loose-grace">
-      <i class="fab fa-soundcloud"></i>
+      <i class="fab fa-soundcloud mr-2"></i>
+      <h3>SoundCloud</h3>
     </a>
   </div>
 
   <!-- Social -->
-  <h2 class="text-center mb-4 text-sm">Follow us</h2>
-  <div class="flex justify-center">
-    <a class="flex items-center justify-center w-12 h-12 bg-black rounded-full mr-4 text-blue-600" target="_blank"
+  <h2 class="sr-only">Follow us</h2>
+  <div class="flex justify-center absolute bottom-0 inset-x-0 mb-8">
+    <a class="flex items-center justify-center w-12 h-12 bg-black rounded-full mr-4" target="_blank"
       href="https://www.facebook.com/loosegrace">
       <i class="fab fa-facebook"></i>
+      <h3 class="sr-only">Facebook</h3>
     </a>
-    <a class="flex items-center justify-center w-12 h-12 bg-black rounded-full text-pink-500" target="_blank"
+    <a class="flex items-center justify-center w-12 h-12 bg-black rounded-full" target="_blank"
       href="https://www.instagram.com/loose.grace.band/">
       <i class="fab fa-instagram"></i>
+      <h3 class="sr-only">Instagram</h3>
     </a>
   </div>
 
