@@ -19,7 +19,7 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      'display': 'Cedarville Cursive, cursive',
+      'display': 'Lobster, cursive',
       'body': 'Open Sans, sans-serif'
     },
     extend: {
