@@ -3,9 +3,11 @@
 @import "tailwindcss/utilities";
 
 body {
-  @apply bg-cover bg-no-repeat bg-center h-screen w-screen relative;
+  @apply bg-cover bg-no-repeat bg-center w-screen relative bg-black;
 
   background-image: url('/images/cover.jpg');
+  height: 100vh; /* Fallback for browsers that do not support Custom Properties */
+  height: calc(var(--vh, 1vh) * 100);
 }
 
 body::after {
