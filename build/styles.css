@@ -18645,8 +18645,8 @@ body {
   color: #fff;
   color: rgba(255, 255, 255, var(--text-opacity));
   background-image: url('/static/images/cover.jpg');
-  height: 100vh; /* Fallback for browsers that do not support Custom Properties */
-  height: calc(var(--vh, 1vh) * 100);
+  min-height: 100vh; /* Fallback for browsers that do not support Custom Properties */
+  min-height: calc(var(--vh, 1vh) * 100);
   font-family: 'Bebas Neue', cursive;
 }
 

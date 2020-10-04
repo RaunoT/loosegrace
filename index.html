@@ -37,15 +37,15 @@
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
-<body class="relative w-screen bg-black bg-center bg-no-repeat bg-cover sm:flex sm:flex-col sm:justify-center" onresize="mobileVh()">
+<body class="relative flex flex-col w-screen bg-black bg-center bg-no-repeat bg-cover sm:justify-center" onresize="mobileVh()">
 
   <!-- Heading -->
   <h1 class="sr-only">Loose Grace</h1>
-  <img class="h-48 pt-6 mx-auto mb-4 sm:h-64 sm:pt-0 sm:mb-10 lg:h-72" src="/static/images/logo.svg" alt="Loose Grace Logo">
+  <img class="h-56 pt-10 mx-auto mb-4 sm:h-64 sm:pt-0 sm:mb-10 lg:h-72" src="/static/images/logo.svg" alt="Loose Grace Logo">
 
   <!-- Music -->
   <h2 class="mb-4 text-3xl text-center sm:text-4xl">"Finer Things" is out now!</h2>
-  <div class="flex items-center mb-32 md-down:flex-col md:justify-center">
+  <div class="flex items-center md-down:flex-col md:justify-center sm:mb-32">
     <a class="flex items-center justify-center text-lg transition duration-200 md-down:mb-4 md:mr-8 hover:text-green-500" target="_blank"
       href="https://open.spotify.com/track/3ZH04pd7DKihjzECublwYV?si=ZYB7EldxTCGILs5qFODSrg">
       <i class="mr-2 fab fa-spotify"></i>
@@ -70,7 +70,7 @@
 
   <!-- Social -->
   <h2 class="sr-only">Follow us</h2>
-  <div class="absolute inset-x-0 bottom-0 flex justify-center mb-4">
+  <div class="flex justify-center mb-4 sm-down:mt-auto sm:absolute sm:bottom-0 sm:inset-x-0">
     <a class="flex items-center justify-center w-12 h-12 mr-4 bg-black rounded-full" target="_blank"
       href="https://www.facebook.com/loosegrace">
       <i class="fab fa-facebook"></i>
