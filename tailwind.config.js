@@ -8,6 +8,7 @@ const globalStyles = ({ addBase, config }) => {
   addBase({
     body: {
       color: config('theme.colors.white'),
+      fontFamily: config('theme.fontFamily.body')
     }
   });
 }
@@ -19,14 +20,11 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      'display': 'Lobster, cursive',
-      'body': 'Open Sans, sans-serif'
+      'body': 'Bebas Neue, cursive'
     },
     extend: {
       colors: {
         yellow: '#efe8ba',
-        black: '#000',
-        white: '#fff',
       },
       fontSize: {
         '7xl': '5rem',
@@ -37,6 +35,11 @@ module.exports = {
         'lg-down': {'max': '1023px'},
         'md-down': {'max': '767px'},
         'sm-down': {'max': '639px'}
+      },
+      spacing: {
+        '72': '18rem',
+        '84': '21rem',
+        '96': '24rem'
       }
     },
   },

@@ -3,9 +3,7 @@
 @import "tailwindcss/utilities";
 
 body {
-  @apply bg-cover bg-no-repeat bg-center w-screen relative bg-black;
-
-  background-image: url('/images/cover.jpg');
+  background-image: url('/static/cover.jpg');
   height: 100vh; /* Fallback for browsers that do not support Custom Properties */
   height: calc(var(--vh, 1vh) * 100);
 }
@@ -24,7 +22,7 @@ h1 {
 
 @screen md-down {
   body {
-    background-image: url('/images/cover-mobile.jpg') !important;
+    background-image: url('/static/cover-mobile.jpg') !important;
   }
 
   h1 {
