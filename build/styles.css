@@ -595,11 +595,6 @@ video {
   height: auto;
 }
 
-body {
-  color: #fff;
-  font-family: Bebas Neue, cursive;
-}
-
 .container {
   width: 100%;
 }
@@ -18646,9 +18641,13 @@ body {
 }
 
 body {
-  background-image: url('/static/cover.jpg');
+  --text-opacity: 1;
+  color: #fff;
+  color: rgba(255, 255, 255, var(--text-opacity));
+  background-image: url('/static/images/cover.jpg');
   height: 100vh; /* Fallback for browsers that do not support Custom Properties */
   height: calc(var(--vh, 1vh) * 100);
+  font-family: 'Bebas Neue', cursive;
 }
 
 body::after {
@@ -18670,7 +18669,7 @@ h1 {
 
 @media (max-width: 767px) {
   body {
-    background-image: url('/static/cover-mobile.jpg') !important;
+    background-image: url('/static/images/cover-mobile.jpg') !important;
   }
 
   h1 {

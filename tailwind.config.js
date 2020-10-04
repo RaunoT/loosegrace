@@ -1,18 +1,3 @@
-/**
- * Global Styles Plugin
- *
- * This plugin modifies Tailwind’s base styles using values from the theme.
- * https://tailwindcss.com/docs/adding-base-styles#using-a-plugin
- */
-const globalStyles = ({ addBase, config }) => {
-  addBase({
-    body: {
-      color: config('theme.colors.white'),
-      fontFamily: config('theme.fontFamily.body')
-    }
-  });
-}
-
 module.exports = {
   purge: [
     './**/*.html',
@@ -44,7 +29,5 @@ module.exports = {
     },
   },
   variants: {},
-  plugins: [
-    globalStyles,
-  ],
+  plugins: []
 }

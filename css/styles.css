@@ -3,9 +3,12 @@
 @import "tailwindcss/utilities";
 
 body {
-  background-image: url('/static/cover.jpg');
+  @apply text-white;
+
+  background-image: url('/static/images/cover.jpg');
   height: 100vh; /* Fallback for browsers that do not support Custom Properties */
   height: calc(var(--vh, 1vh) * 100);
+  font-family: 'Bebas Neue', cursive;
 }
 
 body::after {
@@ -22,7 +25,7 @@ h1 {
 
 @screen md-down {
   body {
-    background-image: url('/static/cover-mobile.jpg') !important;
+    background-image: url('/static/images/cover-mobile.jpg') !important;
   }
 
   h1 {

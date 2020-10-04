@@ -5,10 +5,10 @@
   "homepage": "https://rauno.eu",
   "private": true,
   "scripts": {
-    "serve": "cross-env NODE_ENV=development concurrently \"postcss css/custom.css -o build/custom.css --watch\"  \"live-server .\"",
+    "serve": "cross-env NODE_ENV=development concurrently \"postcss css/styles.css -o build/styles.css --watch\"  \"live-server .\"",
     "serve:prod": "cross-env NODE_ENV=production npm run serve",
     "start": "npm run serve",
-    "build": "postcss css/custom.css -o build/custom.css",
+    "build": "postcss css/styles.css -o build/styles.css",
     "build:prod": "cross-env NODE_ENV=production npm run build",
     "lint:css": "stylelint css"
   },
