@@ -5,7 +5,7 @@
 body {
   @apply text-white;
 
-  background-image: url('/static/images/cover.jpg');
+  background-image: url('/static/images/cover--recurrence.jpg');
   height: 100vh; /* Fallback for browsers that do not support Custom Properties */
   height: calc(var(--vh, 1vh) * 100);
   font-family: 'Bebas Neue', cursive;
@@ -25,7 +25,7 @@ h1 {
 
 @screen md-down {
   body {
-    background-image: url('/static/images/cover-mobile.jpg') !important;
+
   }
 
   h1 {
