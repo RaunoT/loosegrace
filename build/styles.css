@@ -18644,7 +18644,7 @@ body {
   --text-opacity: 1;
   color: #fff;
   color: rgba(255, 255, 255, var(--text-opacity));
-  background-image: url('/static/images/cover.jpg');
+  background-image: url('/static/images/cover--recurrence.jpg');
   height: 100vh; /* Fallback for browsers that do not support Custom Properties */
   height: calc(var(--vh, 1vh) * 100);
   font-family: 'Bebas Neue', cursive;
@@ -18669,7 +18669,6 @@ h1 {
 
 @media (max-width: 767px) {
   body {
-    background-image: url('/static/images/cover-mobile.jpg') !important;
   }
 
   h1 {
