@@ -2,14 +2,20 @@
 <html lang="en">
 
 <head>
-  <!-- TODO: Google Analytics -->
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167888553-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
+    gtag('config', 'UA-167888553-1');
+  </script>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Loose Grace</title>
   <link rel="stylesheet" href="./style.css">
-
   <!-- Favicon -->
   <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png?v=6938vKxLaA">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png?v=6938vKxLaA">
@@ -20,19 +26,68 @@
   <meta name="msapplication-TileColor" content="#000000">
   <meta name="msapplication-config" content="/favicon/browserconfig.xml?v=6938vKxLaA">
   <meta name="theme-color" content="#000000">
-
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="Loose Grace">
   <meta property="og:site_name" content="Loose Grace">
   <meta property="og:url" content="https://loosegrace.com">
-  <meta property="og:description" content="Good ol' rock music in the makin'">
+  <meta property="og:description" content="New album 💽 'Blonde' out everywhere 17.06! 🎉">
   <meta property="og:image" content="https://loosegrace.com/static/images/cover--recurrence.jpg">
+  <!-- Fonts & icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
 
-<body class="bg-[#E8E8E8] text-[#1D1D1B]">
-  <main class="container h-screen bg-yellow-200">
-    <h1>Loose Grace</h1>
+<body class="text-white bg-black font-body">
+  <main class="container flex flex-col items-center min-h-screen pt-10 pb-4 text-center md:pt-18">
+    <h1 class="sr-only">Loose Grace</h1>
+
+    <!-- Blonde album -->
+    <img src="img/typography.svg" alt="Loose Grace" class="w-56 mb-6 md:mb-8">
+    <h2 class="text-4xl text-[#eee8b4] mb-4 animate-pulse">Blonde</h2>
+    <img src="img/blonde.png" alt="Album named Blonde"
+      class="w-5/6 mb-4 duration-300 transform md:w-72 lg:hover:scale-105">
+    <p class="mb-4 text-xl">Out everywhere 17.06</p>
+
+    <!-- Socials -->
+    <div class="flex items-center justify-center space-x-6 sm:space-x-8">
+      <a class="social-icon hover:text-green-500" target="_blank"
+        href="https://open.spotify.com/artist/1wdr3f1IZPyMm4Bu0PcxNd?si=33SRBE0WRZKDfjouKlRDlA">
+        <i class="mb-1 mr-2 text-green-500 fab fa-spotify"></i>
+        <h3 class="hidden sm:block">Spotify</h3>
+      </a>
+      <a class="social-icon hover:text-gray-300" target="_blank"
+        href="https://music.apple.com/artist/loose-grace/1515129835">
+        <i class="mb-1 mr-2 text-gray-300 fab fa-apple"></i>
+        <h3 class="hidden sm:block">Music</h3>
+      </a>
+      <a class="social-icon hover:text-red-500" target="_blank"
+        href="https://www.youtube.com/channel/UCn1aq-hWYnjIjvoNXVBrWQw">
+        <i class="mb-1 mr-2 text-red-500 fab fa-youtube"></i>
+        <h3 class="hidden sm:block">YouTube</h3>
+      </a>
+      <a class="social-icon hover:text-orange-500" target="_blank" href="https://soundcloud.com/loose-grace/">
+        <i class="mb-1 mr-2 text-orange-500 fab fa-soundcloud"></i>
+        <h3 class="hidden sm:block">SoundCloud</h3>
+      </a>
+    </div>
+
+    <!-- Social -->
+    <h2 class="sr-only">Follow us</h2>
+    <div class="flex items-center justify-center pt-8 mt-auto space-x-4">
+      <a class="transition duration-200 hover:opacity-75"
+        href="mailto:contact@loosegrace.com">contact@loosegrace.com</a>
+      <a class="transition duration-200 hover:opacity-75" target="_blank" href="https://www.facebook.com/loosegrace">
+        <i class="fab fa-facebook"></i>
+        <h3 class="sr-only">Facebook</h3>
+      </a>
+      <a class="transition duration-200 hover:opacity-75" target="_blank"
+        href="https://www.instagram.com/loose.grace.band/">
+        <i class="fab fa-instagram"></i>
+        <h3 class="sr-only">Instagram</h3>
+      </a>
+    </div>
   </main>
 </body>
 

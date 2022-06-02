@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .social-icon {
+    @apply flex items-center text-lg transition duration-200;
+  }
+}
