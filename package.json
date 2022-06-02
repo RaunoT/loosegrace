@@ -4,27 +4,26 @@
   "author": "Rauno Tegelmann <raunoot@gmail.com>",
   "homepage": "https://rauno.eu",
   "private": true,
+  "source": "src/index.html",
   "scripts": {
-    "serve": "cross-env NODE_ENV=development concurrently \"postcss css/styles.css -o build/styles.css --watch\"  \"live-server .\"",
-    "serve:prod": "cross-env NODE_ENV=production npm run serve",
-    "start": "npm run serve",
-    "build": "postcss css/styles.css -o build/styles.css",
-    "build:prod": "cross-env NODE_ENV=production npm run build",
-    "lint:css": "stylelint css"
+    "dev": "parcel",
+    "build": "parcel build"
   },
-  "dependencies": {
-    "autoprefixer": "^9.5.1",
-    "tailwindcss": "^1.4"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RaunoT/renardmotorcycles.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RaunoT/renardmotorcycles/issues"
   },
   "devDependencies": {
-    "concurrently": "^4.1.0",
-    "cross-env": "^5.2.0",
-    "cssnano": "^4.1.10",
-    "live-server": "^1.2.1",
-    "postcss-cli": "^6.1.2",
-    "postcss-import": "^12.0.1",
-    "stylelint": "^10.0.1",
-    "stylelint-cli": "^1.1.0",
-    "stylelint-config-recommended": "^3.0"
+    "@parcel/packager-raw-url": "^2.6.0",
+    "@parcel/packager-xml": "^2.6.0",
+    "@parcel/transformer-webmanifest": "^2.6.0",
+    "@parcel/transformer-xml": "^2.6.0",
+    "parcel": "^2.6.0",
+    "postcss": "^8.4.14",
+    "tailwindcss": "^3.0.24"
   }
 }

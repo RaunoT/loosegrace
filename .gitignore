@@ -1,8 +1,4 @@
-# Node modules
-node_modules/
-
-# Visual Studio Code user settings
-.vscode/
-
-#macOS specific
+node_modules
 .DS_Store
+dist
+.parcel-cache/*
