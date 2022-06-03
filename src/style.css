@@ -7,3 +7,41 @@
     @apply flex items-center text-sm transition duration-200 sm:text-lg;
   }
 }
+
+/* .slider {
+  @apply relative flex items-center w-5/6 h-10 space-x-4 overflow-hidden md:w-72;
+
+  --animation-speed: 10s;
+  --animation-delay: calc(var(--animation-speed) / 2);
+}
+
+.slider-items {
+  @apply absolute flex items-center space-x-4 transition-all duration-1000;
+
+  animation-name: slide;
+  animation-duration: var(--animation-speed);
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.slider-items > div {
+  @apply text-4xl text-[#eee8b4] flex-shrink-0 animate-pulse;
+}
+
+.slider-items--alt {
+  transform: translateX(100%);
+  animation-delay: var(--animation-delay);
+}
+
+.slider-items--alt > div {
+  @apply text-blue-500;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+} */
