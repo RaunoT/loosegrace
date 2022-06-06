@@ -32,7 +32,7 @@
   <meta property="og:site_name" content="Loose Grace">
   <meta property="og:url" content="https://loosegrace.com">
   <meta property="og:description" content="New album 💽 'Blonde' out everywhere 17.06! 🎉">
-  <meta property="og:image" content="https://loosegrace.com/static/images/cover--recurrence.jpg">
+  <meta property="og:image" content="https://loosegrace.com/static/images/blonde-cover.png">
   <!-- Fonts & icons -->
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
@@ -44,10 +44,11 @@
     <h1 class="sr-only">Loose Grace</h1>
 
     <!-- Blonde album -->
-    <img src="img/typography.svg" alt="Loose Grace" class="w-48 mb-8">
+    <img src="img/typography.svg" alt="Loose Grace" class="w-48 mb-8 lg:mb-12 lg:w-56">
 
-    <section class="mb-4">
+    <section class="w-full mb-4 overflow-hidden lg:w-2/3 xl:w-2/5">
       <h2 class="sr-only">New album "Blonde"</h2>
+      <!-- Slider -->
       <div class="mb-4 slider" aria-hidden="true">
         <div class="slider-items">
           <div>Blonde</div>
@@ -69,8 +70,16 @@
           <div>Blonde</div>
         </div>
       </div>
-      <img src="img/blonde.png" alt="Artwork for the new album Blonde"
-        class="w-3/4 mx-auto mb-4 duration-300 transform md:w-72 lg:hover:scale-105">
+      <!-- Album -->
+      <div class="relative w-3/4 mx-auto mb-4 group md:px-0 lg:w-full">
+        <img src="img/blonde.png" alt="Artwork for the new album Blonde"
+          class="w-5/6 duration-300 transform group-hover:translate-x-3 md:group-hover:translate-x-6">
+        <div
+          class="absolute top-0 right-0 h-full duration-300 -z-10 group-hover:-translate-x-3 md:group-hover:-translate-x-6">
+          <img src="img/vinyl.png" alt="Vinyl record" class="h-full animate-[spin_5s_linear_infinite]">
+        </div>
+      </div>
+      <!-- Info -->
       <p class="mb-1 text-2xl">Out everywhere <span class="text-[#eee8b4]">17.06</span></p>
       <a href="https://distrokid.com/hyperfollow/loosegrace/blonde" class="text-gray-300 link"
         target="_blank">Pre-save</a>

@@ -13,19 +13,19 @@
 }
 
 .slider {
-  @apply flex items-center w-full overflow-hidden pointer-events-none md:w-72;
+  @apply flex items-center w-full overflow-hidden pointer-events-none;
 
   max-width: 100vw;
 }
 
 .slider-items {
-  @apply flex items-center space-x-4 pointer-events-none;
+  @apply flex items-center space-x-4;
 
   animation: slideShow 10s linear infinite;
 }
 
 .slider-items > div {
-  @apply text-4xl text-[#eee8b4] animate-pulse pointer-events-none;
+  @apply text-4xl text-[#eee8b4] animate-pulse;
 }
 
 @keyframes slideShow {
@@ -33,7 +33,7 @@
     transform: translateX(0);
   }
   to {
-    /* The exact width of 1 set of slides */
+    /* The exact width of 1 set of slides, for now 100px each additional */
     transform: translateX(-800px);
   }
 }
