@@ -7,7 +7,11 @@ module.exports = {
     fontFamily: {
       body: "Bebas Neue, cursive",
     },
-    extend: {},
+    extend: {
+      colors: {
+        blonde: "#eee8b4",
+      },
+    },
   },
   plugins: [],
 };

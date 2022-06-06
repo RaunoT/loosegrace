@@ -19,13 +19,19 @@
 }
 
 .slider-items {
-  @apply flex items-center space-x-4;
+  @apply flex items-center space-x-4 text-blonde;
 
   animation: slideShow 10s linear infinite;
 }
 
 .slider-items > div {
-  @apply text-4xl text-[#eee8b4] animate-pulse;
+  @apply flex items-center text-4xl animate-pulse;
+}
+
+.slider-items > div::after {
+  @apply inline-block w-2 h-2 ml-4 rounded-full bg-blonde;
+
+  content: "";
 }
 
 @keyframes slideShow {
@@ -34,6 +40,6 @@
   }
   to {
     /* The exact width of 1 set of slides, for now 100px each additional */
-    transform: translateX(-800px);
+    transform: translateX(-995px);
   }
 }
