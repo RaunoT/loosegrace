@@ -8,40 +8,26 @@
   }
 }
 
-/* .slider {
-  @apply relative flex items-center w-5/6 h-10 space-x-4 overflow-hidden md:w-72;
-
-  --animation-speed: 10s;
-  --animation-delay: calc(var(--animation-speed) / 2);
+.slider {
+  @apply flex items-center w-5/6 overflow-hidden md:w-72;
 }
 
 .slider-items {
-  @apply absolute flex items-center space-x-4 transition-all duration-1000;
+  @apply flex items-center space-x-4;
 
-  animation-name: slide;
-  animation-duration: var(--animation-speed);
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
+  animation: slideShow 10s linear infinite;
 }
 
 .slider-items > div {
-  @apply text-4xl text-[#eee8b4] flex-shrink-0 animate-pulse;
+  @apply text-4xl text-[#eee8b4] animate-pulse;
 }
 
-.slider-items--alt {
-  transform: translateX(100%);
-  animation-delay: var(--animation-delay);
-}
-
-.slider-items--alt > div {
-  @apply text-blue-500;
-}
-
-@keyframes slide {
+@keyframes slideShow {
   from {
     transform: translateX(0);
   }
   to {
-    transform: translateX(-100%);
+    /* The exact width of 1 set of slides */
+    transform: translateX(-701px);
   }
-} */
+}
