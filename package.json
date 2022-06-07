@@ -5,6 +5,11 @@
   "homepage": "https://rauno.eu",
   "private": true,
   "source": "src/index.html",
+  "targets": {
+    "default": {
+      "distDir": "docs"
+    }
+  },
   "scripts": {
     "dev": "parcel",
     "build": "parcel build"
