@@ -11,7 +11,7 @@
     }
   },
   "scripts": {
-    "dev": "parcel",
+    "dev": "parcel --open",
     "build": "parcel build"
   },
   "repository": {
