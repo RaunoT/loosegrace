@@ -12,15 +12,22 @@
   },
   "scripts": {
     "dev": "parcel --open",
-    "build": "parcel build"
+    "clean": "rm -rf docs",
+    "build:storage": "mkdir docs && cp -r src/static/* docs/",
+    "build": "yarn clean && yarn build:storage && parcel build",
+    "prettify": "prettier --write \"src/**/*.{html,css}\""
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/RaunoT/renardmotorcycles.git"
+    "url": "git+https://github.com/RaunoT/loosegrace.git"
   },
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/RaunoT/renardmotorcycles/issues"
+    "url": "https://github.com/RaunoT/loosegrace/issues"
+  },
+  "dependencies": {
+    "postcss": "^8.4.31",
+    "tailwindcss": "^3.3.3"
   },
   "devDependencies": {
     "@parcel/packager-raw-url": "^2.6.0",
@@ -28,7 +35,6 @@
     "@parcel/transformer-webmanifest": "^2.6.0",
     "@parcel/transformer-xml": "^2.6.0",
     "parcel": "^2.6.0",
-    "postcss": "^8.4.14",
-    "tailwindcss": "^3.0.24"
+    "prettier": "^3.0.3"
   }
 }
