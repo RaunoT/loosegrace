@@ -38,6 +38,7 @@
   from {
     transform: translateX(0);
   }
+
   to {
     /* The exact width of 1 set of slides, for now 100px each additional */
     transform: translateX(-995px);

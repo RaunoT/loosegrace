@@ -15,7 +15,8 @@
     "clean": "rm -rf docs",
     "build:storage": "mkdir docs && cp -r src/static/* docs/",
     "build": "yarn clean && yarn build:storage && parcel build",
-    "prettify": "prettier --write \"src/**/*.{html,css}\""
+    "format": "prettier --write .",
+    "postinstall": "husky install"
   },
   "repository": {
     "type": "git",
@@ -34,7 +35,11 @@
     "@parcel/packager-xml": "^2.6.0",
     "@parcel/transformer-webmanifest": "^2.6.0",
     "@parcel/transformer-xml": "^2.6.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^15.0.1",
     "parcel": "^2.6.0",
-    "prettier": "^3.0.3"
+    "prettier": "^3.0.3",
+    "stylelint": "^15.11.0",
+    "stylelint-config-standard": "^34.0.0"
   }
 }
