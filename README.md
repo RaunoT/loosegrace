@@ -4,8 +4,8 @@ A very simple static HTML website for the band [Loose Grace](https://loosegrace.
 
 ## Quickstart
 
-`yarn` - Install dependencies
+`pnpm i` - Install dependencies
 
-`yarn dev` - Start development server with live-reloading for changes
+`pnpm dev` - Start development server with live-reloading for changes
 
-`yarn build` - Build assets for production
+`pnpm build` - Build assets for production
