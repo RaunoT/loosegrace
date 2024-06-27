@@ -1,3 +1,4 @@
 {
-  "**/*.{html,css,js,json}": "prettier --write"
+  "src/**/*.{html,css,js,json}": "prettier --write",
+  "src/**/*.css": "stylelint --cache --fix"
 }

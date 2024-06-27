@@ -1,16 +1,23 @@
 {
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
-    "source.organizeImports": true
+    "source.organizeImports": "never"
   },
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "css.validate": false,
   "[css]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  "prettier.documentSelectors": ["**/*.svg"],
+  "stylelint.packageManager": "pnpm",
+  "stylelint.snippet": ["css", "postcss"],
+  "stylelint.validate": ["css", "postcss"],
+  "files.associations": {
+    "*.css": "postcss"
+  },
+  "tailwindCSS.experimental.classRegex": [
+    ["clsx\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"]
+  ]
 }
