@@ -13,7 +13,7 @@
   "scripts": {
     "dev": "parcel --open",
     "clean": "rm -rf docs",
-    "build": "yarn clean && yarn build:storage && parcel build",
+    "build": "pnpm clean && pnpm build:storage && parcel build",
     "build:storage": "mkdir docs && cp -r src/static/* docs/",
     "lint:css": "stylelint --cache 'src/**/*.css'",
     "format": "prettier --write --cache src",
@@ -27,24 +27,24 @@
     }
   },
   "dependencies": {
-    "postcss": "^8.4.38",
-    "tailwindcss": "^3.4.4"
+    "postcss": "^8.4.47",
+    "tailwindcss": "^3.4.13"
   },
   "devDependencies": {
-    "@commitlint/cli": "^19.3.0",
-    "@commitlint/config-conventional": "^19.2.2",
+    "@commitlint/cli": "^19.5.0",
+    "@commitlint/config-conventional": "^19.5.0",
     "@parcel/packager-raw-url": "^2.12.0",
     "@parcel/packager-xml": "^2.12.0",
     "@parcel/transformer-webmanifest": "^2.12.0",
     "@parcel/transformer-xml": "^2.12.0",
-    "commitizen": "^4.3.0",
+    "commitizen": "^4.3.1",
     "cz-conventional-changelog": "^3.3.0",
-    "husky": "^9.0.11",
-    "lint-staged": "^15.2.7",
+    "husky": "^9.1.6",
+    "lint-staged": "^15.2.10",
     "parcel": "^2.12.0",
-    "prettier": "^3.3.2",
-    "prettier-plugin-tailwindcss": "^0.6.5",
-    "stylelint": "^16.6.1",
+    "prettier": "^3.3.3",
+    "prettier-plugin-tailwindcss": "^0.6.8",
+    "stylelint": "^16.9.0",
     "stylelint-config-standard": "^36.0.1"
   }
 }
