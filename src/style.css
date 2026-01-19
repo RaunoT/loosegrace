@@ -19,7 +19,7 @@
 }
 
 .slider-items {
-  @apply flex items-center space-x-4 text-tattoo;
+  @apply flex items-center space-x-4 text-faded;
 
   animation: slideshow 13s linear infinite;
 }
@@ -29,7 +29,7 @@
 }
 
 .slider-items > div::after {
-  @apply ml-4 inline-block h-2 w-2 rounded-full bg-tattoo;
+  @apply ml-4 inline-block h-2 w-2 rounded-full bg-faded;
 
   content: '';
 }
@@ -41,6 +41,6 @@
 
   to {
     /* The exact width of 1 set of slides, for now 100px each additional */
-    transform: translateX(-1075px);
+    transform: translateX(-1080px);
   }
 }
